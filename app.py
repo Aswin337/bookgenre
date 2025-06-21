@@ -23,11 +23,11 @@ st.title("📚 Book Genre Preference Survey")
 st.markdown("Predict your **preferred book genre** using machine learning!")
 
 # 🧠 Load model, scaler, encoders
-with open("/mnt/data/model (1).pkl", "rb") as f:
+with open("model.pkl", "rb") as f:
     model = pickle.load(f)
-with open("/mnt/data/scaler.pkl", "rb") as f:
+with open("scaler.pkl", "rb") as f:
     scaler = pickle.load(f)
-with open("/mnt/data/encoders.pkl", "rb") as f:
+with open("encoders.pkl", "rb") as f:
     encoders = pickle.load(f)
 
 st.success("✅ Model and preprocessors loaded!")
